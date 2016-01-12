@@ -1,0 +1,41 @@
+<template name="Controller">
+	<div class="controller">
+		<div class="controller-item">
+			<label>Height</label>
+			<input type="number" target="cssHeight" value="{{cssHeight}}">
+		</div>
+		<div class="controller-item">
+			<label>Padding</label>
+			<input type="number" target="padding" value="{{padding}}">
+		</div>
+
+		<div class="controller-item">
+			<label>Margin</label>
+			<input type="number" target="margin" value="{{margin}}">
+		</div>
+
+		<div class="controller-item">
+			<label>Border</label>
+			<input type="number" target="border" value="{{border}}">
+		</div>
+
+		<div class="controller-item">
+			<label>HScroll</label>
+			<input type="checkbox" target="hscroll" checked="{{hScroll}}">
+		</div>
+
+		<div class="controller-item">
+			<label >VScroll</label>
+			<input target="vscroll" type="checkbox" checked="{{vScroll}}">
+			<span>(添加1000px高的内容)</span>
+		</div>
+
+		<div class="controller-item">
+			<label>BoxSizing</label>
+			<select target="boxsizing">
+				<option value=1>border-box</option>
+				<option value=2>content-box</option>
+			</select>
+		</div>
+	</div>
+</template>

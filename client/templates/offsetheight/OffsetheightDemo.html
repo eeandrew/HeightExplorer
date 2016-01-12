@@ -1,0 +1,30 @@
+<template name="OffsetHeightDemo">
+	<div class="offset-height-demo">
+		<h4 class="section-title">offsetHeight = CSSheight{{cssHeight}} + borders + padding + Hscrollbar</h4>
+		<div class="offset-height-div" 
+		style="box-sizing:{{boxsizing}};height:{{cssHeight}}px;border-width:{{border}}px;padding:{{padding}}px;margin:{{margin}}px auto;">
+			<div class="caption">
+				{{getCalculatedOffsetHeight}}
+			</div>
+			<div class="caption">
+				offsetHeight = element.offsetHeight = {{getRealOffsetHeight}}
+			</div>
+			<div class="caption">
+				{{getCalculatedClientHeight}}
+			</div>
+			<div class="caption">
+				clientHeight = element.clientHeight = {{getRealClientHeight}}
+			</div>
+			<div class="caption">
+				scrollHeight = element.scrollHeight = {{getRealScrollHeight}}
+			</div>
+			{{#if vScroll}}
+				<div class="v-overflow"></div>
+			{{/if}}
+
+			{{#if hScroll}}
+				<div class="h-overflow"></div>
+			{{/if}}
+		</div>
+	</div>
+</template>

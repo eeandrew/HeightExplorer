@@ -5,3 +5,4 @@
 却不能保证能说清楚，源代码也就此没法深入读下去了。
 因此写了这个demo，目的就是要一劳永逸的解决这个问题。你可以改变padding,margin,height,border,hscroll等参数，
 直观的看到offsetHeight,clientHeight,scrollHeight的改变。
+ ![image](https://github.com/eeandrew/ReadmeResource/blob/master/img/Height/exp.png)
